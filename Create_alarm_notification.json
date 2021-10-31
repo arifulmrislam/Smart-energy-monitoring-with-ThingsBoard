@@ -1,0 +1,153 @@
+{
+  "ruleChain": {
+    "additionalInfo": {
+      "description": ""
+    },
+    "name": "Create Alarm & notification 2",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": false,
+    "configuration": null
+  },
+  "metadata": {
+    "firstNodeIndex": 6,
+    "nodes": [
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 378,
+          "layoutY": 427
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "Boiler-Water-Alarm",
+        "debugMode": false,
+        "configuration": {
+          "jsScript": "return msg.Boiler_Water_Temperature_BUH >=71 && msg.Boiler_Water_Temperature_BUH <=100;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 751,
+          "layoutY": 476
+        },
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Boiler-Water-Alarm",
+        "debugMode": false,
+        "configuration": {
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\nreturn details;",
+          "alarmType": "Temperature Alarm"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 754,
+          "layoutY": 399
+        },
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Boiler-Water-Alarm",
+        "debugMode": false,
+        "configuration": {
+          "alarmDetailsBuildJs": "var details = {\n    \tBoiler_Water_Temperature_BUH: msg.Boiler_Water_Temperature_BUH\n};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\nreturn details;",
+          "useMessageAlarmData": false,
+          "alarmType": "Temperature Alarm",
+          "severity": "CRITICAL",
+          "propagate": false,
+          "relationTypes": []
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 728,
+          "layoutY": 226
+        },
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Boiler-Water-Alarm",
+        "debugMode": false,
+        "configuration": {
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\nreturn details;",
+          "alarmType": "Temperature Alarm"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 343,
+          "layoutY": 204
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "Boiler-Water-Alarm",
+        "debugMode": false,
+        "configuration": {
+          "jsScript": "return msg.Boiler_Water_Temperature_BUH >=50 && msg.Boiler_Water_Temperature_BUH <=70;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 725,
+          "layoutY": 147
+        },
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Boiler-Water-Alarm",
+        "debugMode": false,
+        "configuration": {
+          "alarmDetailsBuildJs": "var details = {\n    \tBoiler_Water_Temperature_BUH: msg.Boiler_Water_Temperature_BUH\n};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\nreturn details;",
+          "useMessageAlarmData": false,
+          "alarmType": "Temperature Alarm",
+          "severity": "MAJOR",
+          "propagate": false,
+          "relationTypes": []
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 75,
+          "layoutY": 285
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsSwitchNode",
+        "name": "by type",
+        "debugMode": false,
+        "configuration": {
+          "jsScript": "function nextRelation(metadata, msg){\n        \tif (metadata.dataType == 'occupancy'){\n        \t\treturn ['route-3'];\n        \t} \n        }\n        \n        return nextRelation(metadata, msg);\n        \n        \n    "
+        }
+      }
+    ],
+    "connections": [
+      {
+        "fromIndex": 0,
+        "toIndex": 2,
+        "type": "True"
+      },
+      {
+        "fromIndex": 0,
+        "toIndex": 1,
+        "type": "False"
+      },
+      {
+        "fromIndex": 4,
+        "toIndex": 5,
+        "type": "True"
+      },
+      {
+        "fromIndex": 4,
+        "toIndex": 3,
+        "type": "False"
+      },
+      {
+        "fromIndex": 6,
+        "toIndex": 4,
+        "type": "route-3"
+      },
+      {
+        "fromIndex": 6,
+        "toIndex": 0,
+        "type": "route-3"
+      }
+    ],
+    "ruleChainConnections": null
+  }
+}
