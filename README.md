@@ -35,7 +35,7 @@ Random values example,
   
 Smart energy dashboard
 
-<img src= "screenShot.png" width=800>
+<img src= "screenShort.png" width=800>
 
 <img src= "Screenshot.png" width=800>
 
