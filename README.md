@@ -1,7 +1,7 @@
 # Smart-energy-monitoring-with-ThingsBoard
 Smart Energy Monitoring demo dashboard.
 
-Overview
+## Overview
 
 ThingsBoard platform provides out-of-the-box components and APIs to dramatically reduce time to market and our effort to create smart energy solutions and energy monitoring systems. 
 Save up to 90% of development time for our smart energy solution by utilizing following benefits:
@@ -23,13 +23,13 @@ Generate random values use ThingsBoard rule chains,
 
 <img src= "Rule Chains.png" width=800>
 
-Alarm and Notification
+## Alarm and Notification
 
 I also created alarm and notification for demo dashboard using ThingsBoard rule chains.
 
 <img src= "Alarm and Notification.png" width=800>
 
-Random values example,
+## Random values example,
 
 <img src= "Random Values.png" width=800>
   
@@ -39,7 +39,7 @@ Smart energy dashboard
 
 <img src= "Screenshot.png" width=800>
 
-Live Demo: [Smart Energy Monitoring demo dashboard](https://myiot.polisea.ro/dashboard/e13d0a50-04ad-11ec-9fc0-d7ec4e17a89a?publicId=7cb71a20-041d-11ec-9fc0-d7ec4e17a89a)
+Live Demo: [Smart Energy Monitoring Demo Dashboard](https://myiot.polisea.ro/dashboard/e13d0a50-04ad-11ec-9fc0-d7ec4e17a89a?publicId=7cb71a20-041d-11ec-9fc0-d7ec4e17a89a)
 
 Visit our official website: [Polisea S.A](https://polisea.ro/aiot/) 
 
