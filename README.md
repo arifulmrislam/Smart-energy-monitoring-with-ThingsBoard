@@ -27,11 +27,11 @@ f.The platform provides production ready server infrastructure to connect your s
 
 I also created alarm and notification for demo dashboard using ThingsBoard rule chains.
 
-<img src= "Alarm and Notification.png" width=800>
+<img src= "Alarm and Notification.png" width=1000>
 
 ## Random values example,
 
-<img src= "Random Values.png" width=800>
+<img src= "Random Values.png" width=1000>
   
 ## Smart Energy Monitoring Dashboard
 
