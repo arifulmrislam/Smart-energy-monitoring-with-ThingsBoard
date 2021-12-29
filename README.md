@@ -1,5 +1,5 @@
 # Smart-energy-monitoring-with-ThingsBoard
-Smart Energy Monitoring demo dashboard.
+## Smart Energy Monitoring demo dashboard.
 
 ## Overview
 
@@ -19,7 +19,7 @@ e.Enable energy management by utilizing ThingsBoard API to control and manage sm
 f.The platform provides production ready server infrastructure to connect your smart meter devices, collect, store and analyze energy monitoring data, 
   and share results of the analysis with your customers and end-users.
 
-Generate random values use ThingsBoard rule chains,
+## Generate random values use ThingsBoard rule chains,
 
 <img src= "Rule Chains.png" width=800>
 
@@ -33,7 +33,7 @@ I also created alarm and notification for demo dashboard using ThingsBoard rule 
 
 <img src= "Random Values.png" width=800>
   
-Smart energy dashboard
+## Smart Energy Monitoring Dashboard
 
 <img src= "IMG.png" width=800>
 
