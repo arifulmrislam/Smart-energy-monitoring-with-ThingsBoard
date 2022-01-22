@@ -1,7 +1,7 @@
 # Smart-energy-monitoring-with-ThingsBoard
 ## Smart Energy Monitoring demo dashboard.
 
-` ## Overview `
+## Overview
 
 ThingsBoard platform provides out-of-the-box components and APIs to dramatically reduce time to market and our effort to create smart energy solutions and energy monitoring systems. 
 Save up to 90% of development time for our smart energy solution by utilizing following benefits:
