@@ -1,7 +1,7 @@
 # Smart-energy-monitoring-with-ThingsBoard
-## Smart Energy Monitoring demo dashboard.
+## `Smart Energy Monitoring demo dashboard.`
 
-## Overview
+## `Overview`
 
 ThingsBoard platform provides out-of-the-box components and APIs to dramatically reduce time to market and our effort to create smart energy solutions and energy monitoring systems. 
 Save up to 90% of development time for our smart energy solution by utilizing following benefits:
@@ -19,21 +19,21 @@ Save up to 90% of development time for our smart energy solution by utilizing fo
 - The platform provides production ready server infrastructure to connect your smart meter devices, collect, store and analyze energy monitoring data, 
   and share results of the analysis with your customers and end-users.
 
-## Generate random values use ThingsBoard rule chains,
+## `Generate random values use ThingsBoard rule chains,`
 
 <img src= "Rule Chains.png" width=800>
 
-## Alarm and Notification
+## `Alarm and Notification`
 
 I also created alarm and notification for demo dashboard using ThingsBoard rule chains.
 
 <img src= "Alarm and Notification.png" width=800>
 
-## Random values example,
+## `Random values example,`
 
 <img src= "Random Values.png" width=800>
   
-## Smart Energy Monitoring Dashboard
+## `Smart Energy Monitoring Dashboard`
 
 <img src= "IMG.png" width=1000>
 
